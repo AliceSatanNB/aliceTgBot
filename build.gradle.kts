@@ -13,6 +13,7 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
     implementation("io.github.dehuckakpyt.telegrambot:telegram-bot-core:$telegram_bot_version")
+    implementation("io.github.cdimascio:dotenv-kotlin:6.5.0")
 }
 
 tasks.test {
