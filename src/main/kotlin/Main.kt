@@ -4,8 +4,9 @@ import io.github.dehuckakpyt.telegrambot.config.TelegramBotConfig
 import io.github.dehuckakpyt.telegrambot.ext.config.receiver.handling
 import io.github.dehuckakpyt.telegrambot.factory.TelegramBotFactory
 import ru.greyTechGoo.handler.startCommand
+import ru.greyTechGoo.handler.helpCommand
 import io.github.cdimascio.dotenv.Dotenv
-import io.github.cdimascio.dotenv.DotenvException;
+
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -17,6 +18,7 @@ fun main(args: Array<String>): Unit {
         receiving {
             handling {
                 startCommand()
+                helpCommand()
             }
         }
     }
